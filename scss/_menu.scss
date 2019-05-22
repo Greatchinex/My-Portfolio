@@ -1,0 +1,39 @@
+// Hamburger Menu
+.menu-btn {
+    position: absolute;
+    z-index: 3;
+    top: 35px;
+    right: 35px;
+    cursor: pointer;
+    @include easeOut();
+
+    .menu-line {
+        width: 28px;
+        height: 3px;
+        margin: 0 0 5px 0;
+        background: #fff;
+        @include easeOut();
+    }
+
+    // Rotate Hamburger Menu into X
+    &.close {
+        transform: rotate(180deg);
+
+        .menu-line {
+            // Rotate Line 1
+            &:nth-child(1) {
+                transform: rotate(45deg) translate(5px, 5px);
+            }
+
+            // Hide Line 2
+            &:nth-child(2) {
+                opacity: 0;
+            }
+
+            // Rotate Line 3
+            &:nth-child(3) {
+                transform: rotate(-45deg) translate(7px, -6px);
+            }
+        }
+    }
+}
