@@ -1,5 +1,6 @@
 @import 'config';  // Import variables and mixings
 @import 'menu'; // Import styling for the menu Button
+@import 'responsive'; // import Media Queries
 
 * {
     box-sizing: border-box;
@@ -24,7 +25,7 @@ h3 {
 
     // equivalent to h1.lg-heading in css
     &.lg-heading {
-        font-size: 5em;
+        font-size: 4em;
     }
     &.sm-heading {
         margin-bottom: 2em;

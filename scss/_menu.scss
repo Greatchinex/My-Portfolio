@@ -131,7 +131,7 @@
 }
 
 // Delay each nav item by 0.1 secs.(Like For Loop In JavaScript)
-@for $x from 1 through 5 {
+@for $x from 1 through 4 {
     .nav-item:nth-child(#{$x}) {
         transition-delay: $x * 0.1s;
     }
